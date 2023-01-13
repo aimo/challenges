@@ -8,10 +8,7 @@ Como solucion propones crear AIL (another interpreter language), el cual podra e
 y tener constantes, lo cual sera lo minimo suficiente para controlar la nave desde tierra.
 
 ## Stack requerido
-- `nodejs`
-- `typescript`
-
-**El unico requisito obligatorio es que el backend y frontend esten escritos en `typescript` usando la base que se da en este repositorio**
+- El unico requisito obligatorio es que el backend y frontend esten escritos en `typescript` usando la base que se da en este repositorio
 
 **Frameworks y otras librerias se dejan a libre eleccion, tanto para el front como para el backend**
 
@@ -112,7 +109,16 @@ Luego de esto, para que la nave se pueda acceder via http, deberas hacer que est
 `/ship/evaluate`
 
 Por ejemplo, se espera que
+```bash
+curl -X POST -H "Content-Type: application/json" --data '{"type": "not", "payload": {"expression":  {"type": "const", "payload": {"value": false}}}}' localhost:3000/ship/evaluate
+```
 
+De como resultado 
+```txt
+true
+```
+
+Otro ejemplo
 ```bash
 curl -X POST -H "Content-Type: application/json" --data '{"type": "const", "payload": {"value": "hello world!"}}' localhost:3000/ship/evaluate
 ```
