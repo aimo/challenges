@@ -188,3 +188,8 @@ la funcion standard `fetch` el protocolo es requerido**
 ```bash
 SHIP_URL='http://localhost:3000' npm run test:functional
 ```
+
+#### hint (si llegaste aca y no sabes como empezar :v 😝)
+*En la carpeta `chore/hint` puedes encontrar una implementacion de un lenguaje 
+similar al de la prueba, que te puede ayudar a entender conceptos basicos de la
+recursion que te serviran*
