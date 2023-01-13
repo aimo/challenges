@@ -8,7 +8,10 @@ Como solucion propones crear AIL (another interpreter language), el cual podra e
 y tener constantes, lo cual sera lo minimo suficiente para controlar la nave desde tierra.
 
 ## Stack requerido
-- El unico requisito obligatorio es que el backend y frontend esten escritos en `typescript` usando la base que se da en este repositorio
+- `nodejs`
+- `typescript`
+
+**El unico requisito obligatorio es que el backend y frontend esten escritos en `typescript` usando la base que se da en este repositorio**
 
 **Frameworks y otras librerias se dejan a libre eleccion, tanto para el front como para el backend**
 
