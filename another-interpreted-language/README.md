@@ -8,6 +8,7 @@ Como solucion propones crear AIL (another interpreter language), el cual podra e
 y tener constantes, lo cual sera lo minimo suficiente para controlar la nave desde tierra.
 
 ## Stack requerido
+
 - El unico requisito obligatorio es que el backend y frontend esten escritos en `typescript` usando la base que se da en este repositorio
 
 **Frameworks y otras librerias se dejan a libre eleccion, tanto para el front como para el backend**
@@ -101,6 +102,7 @@ const result = evaluate(expression);
 
 assert.equal("test expression is false", result);
 ```
+
 **Se adjunta una amplia gama de tests, los cuales pueden ser ejecutados usando el comando `npm run test:unit`, estos sirven a modo de ejemplo y de apoyo para saber si vas por buen camino**
 
 ## Fase 2
@@ -109,16 +111,19 @@ Luego de esto, para que la nave se pueda acceder via http, deberas hacer que est
 `/ship/evaluate`
 
 Por ejemplo, se espera que
+
 ```bash
 curl -X POST -H "Content-Type: application/json" --data '{"type": "not", "payload": {"expression":  {"type": "const", "payload": {"value": false}}}}' localhost:3000/ship/evaluate
 ```
 
-De como resultado 
+De como resultado
+
 ```txt
 true
 ```
 
 Otro ejemplo
+
 ```bash
 curl -X POST -H "Content-Type: application/json" --data '{"type": "const", "payload": {"value": "hello world!"}}' localhost:3000/ship/evaluate
 ```
@@ -189,7 +194,6 @@ la funcion standard `fetch` el protocolo es requerido**
 SHIP_URL='http://localhost:3000' npm run test:functional
 ```
 
-#### hint (si llegaste aca y no sabes como empezar :v 😝)
-*En la carpeta `chore/hint` puedes encontrar una implementacion de un lenguaje 
-similar al de la prueba, que te puede ayudar a entender conceptos basicos de la
-recursion que te serviran*
+##### hint (si llegaste aca y no sabes como empezar :v 😝)
+
+##### _En la carpeta `chore/hint` puedes encontrar una implementacion de un lenguaje similar al de la prueba, que te puede ayudar a entender conceptos basicos de larecursion que te serviran_
